@@ -8,6 +8,9 @@ namespace Backend.Core.Entities
 
         public CompanySize Size { get; set; } 
 
+        //Relations
+        public ICollection<Job> Jobs { get; set; }  
+
 
          
     }

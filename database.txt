@@ -1,0 +1,41 @@
+Event Management System
+
+Entities:
+
+Organizations
+
+Fields:
+id (Unique identifier)
+name (Name of the organization)
+createdAt (Timestamp for creation)
+updatedAt (Timestamp for last update)
+isActive (Boolean to mark active/inactive status)
+
+Events
+
+Fields:
+id (Unique identifier)
+title (Title of the event)
+description (Brief description of the event)
+date (Date and time of the event)
+location (Venue of the event)
+organizationId (Foreign key referencing the organization)
+createdAt (Timestamp for creation)
+updatedAt (Timestamp for last update)
+isActive (Boolean to mark active/inactive status)
+
+Attendees
+Fields:
+id (Unique identifier)
+firstName (First name of the attendee)
+lastName (Last name of the attendee)
+email (Email address of the attendee)
+phone (Phone number of the attendee)
+registrationDetails (Additional details related to registration)
+eventId (Foreign key referencing the event)
+createdAt (Timestamp for creation)
+updatedAt (Timestamp for last update)
+isActive (Boolean to mark active/inactive status)
+
+
+This structure can be used to build an Event Management System where organizations can create events, manage event details, and attendees can register for these events. You can customize further based on your requirements or add additional functionalities like:
