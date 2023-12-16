@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "UqnwRHewmMJgZQ46UdOMm9fJBmtWynXCRTsFofYNdaHZUDIyApZqfMclXSCYMgvqBbSJXp5i6mETZz46WySi2Q==",
+  "dgSpecHash": "FIPgk+8uOzRk13AKMRiVV8Cpms+5Hav8+vk0Nt2W09mQSlkFDSFIJ+/syqnjl261yuOhMEZpRZTcsDFT1TCFQQ==",
   "success": true,
-  "projectFilePath": "D:\\.net and react project\\Event System\\Backend\\Backend\\Backend.csproj",
+  "projectFilePath": "D:\\.net and react project\\Resume Management system\\Backend\\Backend\\Backend.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Dell\\.nuget\\packages\\automapper\\12.0.1\\automapper.12.0.1.nupkg.sha512",
     "C:\\Users\\Dell\\.nuget\\packages\\automapper.extensions.microsoft.dependencyinjection\\12.0.1\\automapper.extensions.microsoft.dependencyinjection.12.0.1.nupkg.sha512",

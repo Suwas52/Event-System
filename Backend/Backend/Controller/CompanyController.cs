@@ -30,7 +30,7 @@ namespace Backend.Controller
 
         public async Task<IActionResult> CreateCompany(CreateCompanyDTO dto) 
         {
-            Company newCompany = _mapper.Map<Company>(dto);
+            var newCompany = _mapper.Map<Company>(dto);
 
             await _context.AddAsync(newCompany);
 
@@ -42,7 +42,7 @@ namespace Backend.Controller
 
         //Read
         [HttpGet]
-        [Route("get")]
+        [Route("Get")]
         public async Task<ActionResult<IEnumerable<ReadCompanyDTO>>> GetCompanies() 
         {
             var allCompanies = await _context.Companies.ToListAsync();
@@ -51,6 +51,8 @@ namespace Backend.Controller
 
             return Ok(convertedCopies);
         }
+
+        //Read (Get Company By Id)
        
 
 

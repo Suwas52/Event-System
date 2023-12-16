@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "D:\\.net and react project\\Event System\\Backend\\Backend\\Backend.csproj": {}
+    "D:\\.net and react project\\Resume Management system\\Backend\\Backend\\Backend.csproj": {}
   },
   "projects": {
-    "D:\\.net and react project\\Event System\\Backend\\Backend\\Backend.csproj": {
+    "D:\\.net and react project\\Resume Management system\\Backend\\Backend\\Backend.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\.net and react project\\Event System\\Backend\\Backend\\Backend.csproj",
+        "projectUniqueName": "D:\\.net and react project\\Resume Management system\\Backend\\Backend\\Backend.csproj",
         "projectName": "Backend",
-        "projectPath": "D:\\.net and react project\\Event System\\Backend\\Backend\\Backend.csproj",
+        "projectPath": "D:\\.net and react project\\Resume Management system\\Backend\\Backend\\Backend.csproj",
         "packagesPath": "C:\\Users\\Dell\\.nuget\\packages\\",
-        "outputPath": "D:\\.net and react project\\Event System\\Backend\\Backend\\obj\\",
+        "outputPath": "D:\\.net and react project\\Resume Management system\\Backend\\Backend\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\Dell\\AppData\\Roaming\\NuGet\\NuGet.Config",

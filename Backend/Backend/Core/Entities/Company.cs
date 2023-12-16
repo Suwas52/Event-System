@@ -11,7 +11,5 @@ namespace Backend.Core.Entities
         //Relations
         public ICollection<Job> Jobs { get; set; }  
 
-
-         
     }
 }
