@@ -3,12 +3,14 @@ import "./companies.scss";
 import { ICompany } from "../../types/global.types";
 import httpModule from "../../helpers/http.module";
 import { Button, CircularProgress } from "@mui/material";
-import { PlusOne, PlusOneOutlined } from "@mui/icons-material";
+import { Add, PlusOne, PlusOneOutlined } from "@mui/icons-material";
 import CompaniesData from "../../component/company/CompaniesData";
+import { useNavigate } from "react-router-dom";
 
 const Companies = () => {
   const [companies, setCompanies] = useState<ICompany[]>([]);
   const [loading, setLoading] = useState<boolean>(false);
+  const redirect = useNavigate();
 
   useEffect(() => {
     setLoading(true);
@@ -30,8 +32,8 @@ const Companies = () => {
     <div className="content companies">
       <div className="heading">
         <h1>Company</h1>
-        <Button variant="outlined">
-          <PlusOneOutlined />
+        <Button variant="outlined" onClick={() => redirect("/companies/add")}>
+          <Add />
         </Button>
       </div>
       {loading ? (

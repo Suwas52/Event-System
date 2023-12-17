@@ -40,6 +40,7 @@ ul {
   transition: all 0.3s ease-in-out;
 
   &.dark {
+    --blue: #6e76a3;
     --bg-color: #000;
     --text-color1: #fff;
     --text-color2: #999;

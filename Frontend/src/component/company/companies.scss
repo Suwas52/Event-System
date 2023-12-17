@@ -1,5 +1,48 @@
+@import "../../mixins";
+
 .companies-grid {
   * {
     color: var(--text-color1);
+  }
+}
+
+.add-company {
+  @include d-flex(column, center, center);
+  height: 100%;
+  width: 100%;
+
+  .form {
+    @include d-flex(column, center, center);
+    border-radius: 10px;
+    width: 300px;
+    background-color: var(--blue);
+    color: #fff;
+    padding: 20px;
+    margin: 10px;
+
+    .form-control {
+      @include d-flex(column, center, left);
+      padding: 10px;
+
+      label {
+        font-size: 20px;
+        margin: 5px;
+      }
+
+      .input-form {
+        padding: 5px;
+        color: #000;
+        outline: none;
+        font-size: 20px;
+      }
+      .error {
+        margin-top: 5px;
+        color: red;
+      }
+    }
+
+    .btn {
+      @include d-flex(row, space-between, center);
+    }
   }
 }

@@ -4,9 +4,11 @@ import Navbar from "./component/navbar/Navbar";
 
 import { Routes, Route } from "react-router-dom";
 import CustomLazyProgress from "./lazy-progress/CustomLazyProgress";
+import Job from "./pages/job/Job";
 
 const Home = lazy(() => import("./pages/Home"));
 const Companies = lazy(() => import("./pages/company/Companies"));
+const AddCompany = lazy(() => import("./component/company/AddCompany"));
 
 function App() {
   const { darkMode } = useContext(ThemeContext);
@@ -20,7 +22,13 @@ function App() {
         <Suspense fallback={<CustomLazyProgress />}>
           <Routes>
             <Route path="/" element={<Home />} />
-            <Route path="/companies" element={<Companies />} />
+            <Route path="/companies">
+              <Route index element={<Companies />} />
+              <Route path="add" element={<AddCompany />} />
+            </Route>
+            <Route path="jobs">
+              <Route index element={<Job />} />
+            </Route>
           </Routes>
         </Suspense>
       </div>
